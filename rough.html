@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Uses of Flex</title>
+        <style>
+            .content{
+                display: flex;
+                justify-content: space-around;
+                padding: 23px;
+                width: 95%;
+                /* margin: auto; */
+                background-color: rgb(90,10,60);
+                position: absolute;
+                bottom: 0;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: larger;
+            }
+            .table1{
+                padding: 15px 29px 10px 10px;
+
+            }
+            .navbar{
+                display: flex;
+                justify-content: center;
+            }
+            #nnn{
+                color:grey;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <table>
+                <th>
+                    <td class="table1">Home</td>
+                    <td class="table1">Tech Support</td>
+                    <td class="table1">Contact Us</td>
+                    <td class="table1">Sign in</td>
+                </th>
+            </table>
+
+        </div>
+        <div>
+            <p>This HTML address element defines contact information (author/owner) of a document or article</p>
+        </div>
+        <input type="text" id="nnn">
+        <div>
+            <footer class="content">
+                <div>
+                    <address title="Contact John">
+                        <a href="">
+                        Written by John Doe.<br>
+                        Visit us at:<br>
+                        Example1.com<br>
+                        Box 564, Disneyland<br>
+                        USA
+                        </a>
+                    </address>
+                </div>
+                <address title="Contact Harshit">
+                    <a href="#">
+                    Written by Harshit Mishra.<br> 
+                    Visit us at:<br>
+                    Example2.com<br>
+                    Gola Gokharan-nath, Lakhimpurkheri<br>
+                    UP, India
+                    </a>
+                </address>
+                <address title="Contact Amiyanshu">
+                    <a href="#">
+                    Written by Amiyanshu Bhamer<br> 
+                    Visit us at:<br>
+                    Example3.com<br>
+                    Jhunjhunu<br>
+                    Rajasthan, India
+                    </a>
+                </address>
+                <address title="Contact Anubhav">
+                    <a href="">
+                    Written by Anubhav.<br> 
+                    Visit us at:<br>
+                    Example4.com<br>
+                    Hazaribagh, Jharkhand<br>
+                    India
+                    </a>
+                </address>
+                <br>
+                <button type="submit" title="Button" onclick="clickHandler()">Click Me</button>
+               
+            </footer>
+        </div>
+        <script>
+            function clickHandler(e){
+                // document.Text.value="Gagan Mera Saala hai";
+                document.getElementById("nnn").value="hello MF"
+            }
+        </script>
+    </body>
+</html>
